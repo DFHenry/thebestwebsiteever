@@ -1,0 +1,16 @@
+
+#signInSection
+{
+    display: block;
+}
+
+#loginError
+{
+    color: red;
+    display: none;
+}
+
+#newMember
+{
+    display: none;
+}
