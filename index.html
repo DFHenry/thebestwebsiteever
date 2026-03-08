@@ -32,19 +32,31 @@
 
     <section id="newMember">
         <h2>Best Website Ever: New Member Sign-Up</h2>
-        <p>please enter the following information into the form below</p>
         <form id="newMemberForm">
-            <label for="username">Username: </label>
-            <input type="text" name="username">
-            <label for="email">Email Address: </label>
-            <input type="text" name="email">
-            <label for="password">Pasword: </label>
-            <input type="password" name="password">
-            <label for="confirmPass">Confirm Password</label>
-            <input type="password" name="confirmPass">
+            <p>please enter the following information into the form below</p>
+            <div>
+                <label for="username">Username: </label>
+                <input type="text" name="username">
+                <p class="invalidMessage" id="invalidName">Please Enter a Name</p>
+            </div>
+            <div>
+                <label for="email">Email Address: </label>
+                <input type="email" name="email">
+                <p class="invalidMessage" id="invalidEmail">Please Enter a Valid Email Address</p>
+            </div>
+            <div>
+                <label for="password">Pasword: </label>
+                <input type="password" name="password">
+            </div>
+            <div>
+                <label for="confirmPass">Confirm Password</label>
+                <input type="password" name="confirmPass">
+                <p class="invalidMessage" id="invalidPassword">Please Repeat your Password</p>
+            </div>
             <br>
             <input type="submit" value="Sign Up">
-        </form>   
+        </form> 
+        <p id="result"></p>  
     </section>
     
 
