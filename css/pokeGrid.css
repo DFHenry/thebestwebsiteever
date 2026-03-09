@@ -1,0 +1,25 @@
+@font-face {
+    font-family: "pokemon1";
+    src: url(../fonts/POKPIX1.TTF);
+}
+
+@font-face {
+    font-family: "pokemon2";
+    src: url(../fonts/POKPIX2.TTF);
+}
+
+@font-face {
+    font-family: "pokemon3";
+    src: url(../fonts/POKPIX3.TTF);
+}
+
+.poke1
+{
+    font-family: "pokemon1";
+}
+
+.pokeGrid
+{
+    display: grid;
+    grid-template-rows: repeat(15, 1fr);
+}

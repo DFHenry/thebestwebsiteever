@@ -1,3 +1,17 @@
+@font-face {
+    font-family: "pokemon1";
+    src: url("../fonts/POKPIX1.TTF");
+}
+
+@font-face {
+    font-family: "pokemon2";
+    src: url("../fonts/POKPIX2.TTF");
+}
+
+@font-face {
+    font-family: "pokemon3";
+    src: url("../fonts/POKPIX3.TTF");
+}
 
 #signInSection
 {
@@ -18,5 +32,60 @@
 .invalidMessage
 {
     color: red;
+    display: none;
+}
+
+#suggestionArea
+{
+    display: none;
+}
+
+#pokemon
+{
+    display: none;
+}
+
+#pokeGrid
+{
+    display: grid;
+    grid-template-columns: repeat(15, 1fr);
+}
+
+.pokeItem
+{
+    justify-content: center;
+}
+
+.pokeImage1
+{
+    font-family: "pokemon1";
+    font-size: 0.5em;
+}
+
+.pokeImage2
+{
+    font-family: "pokemon2";
+    font-size: 0.5em;
+}
+
+.pokeImage3
+{
+    font-family: "pokemon3";
+    font-size: 0.5em;
+}
+
+#invalidPokemon
+{
+    color:red;
+    display: none;
+}
+
+#validPokemon
+{
+    display: none;
+}
+
+#bloodType
+{
     display: none;
 }

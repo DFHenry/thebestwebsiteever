@@ -30,6 +30,7 @@
         <button id="newMemberButton">Sign Up Here!</button>
     </section>
 
+    <!-- New Member Sign Up -->
     <section id="newMember">
         <h2>Best Website Ever: New Member Sign-Up</h2>
         <form id="newMemberForm">
@@ -55,10 +56,83 @@
             </div>
             <br>
             <input type="submit" value="Sign Up">
-        </form> 
-        <p id="result"></p>  
-    </section>
-    
+        </form>
 
+        <p id="result"></p>
+
+        <p id="redirectTimer"></p>
+
+        <div id="suggestionArea">
+        <p>Here are some recommendations for usernames based on what you have entered.</p>
+            <form id="suggestions">
+                <div>
+                    <label for="suggestion1" id="sug1label"></label>
+                    <input type="radio" name="suggestion" id="sug1" value="">
+                </div>
+                <div>
+                    <label for="sug2" id="sug2label"></label>
+                    <input type="radio" name="suggestion" id="sug2" value="">
+                </div>
+                <div>
+                    <label for="sug2" id="sug3label"></label>
+                    <input type="radio" name="suggestion" id="sug3" value="">
+                </div>
+                <div>
+                    <label for="sug4" id="sug4label"></label>
+                    <input type="radio" name="suggestion" id="sug4" value="">
+                </div>
+                <input type="submit" value="Use Recommendation">
+            </form>
+        </div>
+    </section>
+
+    <!-- Confirmation Checks -->
+
+    <!-- Pokemon Section -->
+    <section id="pokemon">
+        <h2>Please Identify Which Of These Pokemon Is A Bulbasaur</h2>
+
+        <form id="pokeForm">
+            <div id="pokeGrid">
+                
+            </div>
+            <p id="invalidPokemon">Incorrect. Please try again.</p>
+            <input type="submit" value="Submit">
+        </form>
+
+        <p id="validPokemon">Correct! Moving to the next confimation step!</p>
+    </section>
+
+    <!-- Blood Type Section -->
+    <section id="bloodType">
+        <h2>Please Select Your Blood Type</h2>
+
+        <form id="bloodTypeForm">
+            <div>
+                <label for="bt_a">Type: A </label>
+                <input type="radio" name="bloodType_Letter" id="bt_a" value="a">
+            </div>
+            <div>
+                <label for="bt_a">Type: B </label>
+                <input type="radio" name="bloodType_Letter" id="bt_b" value="b">
+            </div>
+                        <div>
+                <label for="bt_ab">Type: AB </label>
+                <input type="radio" name="bloodType_Letter" id="bt_ab" value="ab">
+            </div>
+            <div>
+                <label for="bt_o">Type: O </label>
+                <input type="radio" name="bloodType_Letter" id="bt_o" value="o">
+            </div>
+            <div>
+                <label for="bt_mod">Positive or Negative </label>
+                <select name="bloodType_Mod" id="bt_mod">
+                    <option value="pos">Positive</option>
+                    <option value="neg">Negative</option>
+                </select>
+            </div>
+            <input type="submit" value="SubmitBlood">
+        </form>
+    </section>
 </body>
 </html>
