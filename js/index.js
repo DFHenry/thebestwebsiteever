@@ -253,7 +253,7 @@ window.onload = function ()
             newMemberForm.style.display = "none";
             suggestionArea.style.display = "none";
             result.innerHTML = "Sign up successful! Soon you will be redirectred to our confirmation pages to ensure you are a human";
-            setTimeout(redirectUser, 500);
+            setTimeout(redirectUser, 5000);
         }
         return false;
     }
@@ -320,7 +320,7 @@ window.onload = function ()
             validPokemon.style.display = "block";
             completedTasks += 1;
             taskArray.splice(randomNumber, 1);
-            setTimeout(redirectUser, 500);
+            setTimeout(redirectUser, 5000);
         }
         else
         {
@@ -366,7 +366,7 @@ window.onload = function ()
                 bloodError.innerHTML = "Correct! Please wait while we take you to the next confirmation step!";
                 completedTasks += 1;
                 taskArray.splice(randomNumber, 1);
-                setTimeout(redirectUser, 500);
+                setTimeout(redirectUser, 5000);
             }
         }
 
@@ -469,19 +469,19 @@ window.onload = function ()
                 console.log("Out of tasks. You should not be able to see this!");
             }
         }
-        function updateTimer()
-        {
-            if(countdownTimer > 0)
-            {
-                countdownTimer -= 1;
-                countdownDisplay.innerHTML = "Redirecting in: " + countdownTimer.toString();
-                setTimeout(updateTimer, 1000);
-            }
-            else
-            {
-                spoilers.style.display = "block";
-            }
-        }
+    }
 
+    function updateTimer()
+    {
+        if(countdownTimer > 0)
+        {
+            countdownTimer -= 1;
+            countdownDisplay.innerHTML = "Redirecting in: " + countdownTimer.toString();
+            setTimeout(updateTimer, 1000);
+        }
+        else
+        {
+            spoilers.style.display = "block";
+        }
     }
 }
