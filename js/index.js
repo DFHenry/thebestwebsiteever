@@ -215,7 +215,7 @@ window.onload = function ()
             }
         }
 
-        if(usedNames.length <= 0)
+        if(usedNames.length <= 3)
         {
             let newName = curName.slice(1);
 
@@ -399,7 +399,7 @@ window.onload = function ()
 
             if(buttonTimer == false)
             {
-                setTimeout(finishTimer, 10);
+                setTimeout(finishTimer, 20000);
                 buttonTimer = true;
             }
         }
