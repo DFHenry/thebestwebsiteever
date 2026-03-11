@@ -89,3 +89,43 @@
 {
     display: none;
 }
+
+#bloodError
+{
+    color: red;
+}
+
+#buttonPush
+{
+    display: none;
+
+}
+
+#buttonPushArea
+{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 1fr;
+    justify-items: left;
+    align-items: top;
+    background-color: azure;
+    min-height: 50vh;
+}
+
+#buttonPushActual
+{
+    width: 100px;
+    height: 100px;
+    padding-left: 0px;
+    padding-top: 0px;
+}
+
+#tasksCompleted
+{
+    display: none;
+}
+
+#spoilers
+{
+    display: none;
+}

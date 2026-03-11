@@ -110,29 +110,56 @@
         <form id="bloodTypeForm">
             <div>
                 <label for="bt_a">Type: A </label>
-                <input type="radio" name="bloodType_Letter" id="bt_a" value="a">
+                <input type="radio" name="bloodType_letter" id="bt_a" value="a">
             </div>
             <div>
                 <label for="bt_a">Type: B </label>
-                <input type="radio" name="bloodType_Letter" id="bt_b" value="b">
+                <input type="radio" name="bloodType_letter" id="bt_b" value="b">
             </div>
                         <div>
                 <label for="bt_ab">Type: AB </label>
-                <input type="radio" name="bloodType_Letter" id="bt_ab" value="ab">
+                <input type="radio" name="bloodType_letter" id="bt_ab" value="ab">
             </div>
             <div>
                 <label for="bt_o">Type: O </label>
-                <input type="radio" name="bloodType_Letter" id="bt_o" value="o">
+                <input type="radio" name="bloodType_letter" id="bt_o" value="o">
             </div>
             <div>
                 <label for="bt_mod">Positive or Negative </label>
-                <select name="bloodType_Mod" id="bt_mod">
+                <select name="bloodType_mod" id="bt_mod">
                     <option value="pos">Positive</option>
                     <option value="neg">Negative</option>
                 </select>
             </div>
             <input type="submit" value="SubmitBlood">
         </form>
+
+        <p id="bloodError"></p>
+    </section>
+
+    <!-- Moving Button Section -->
+    <section id="buttonPush">
+        <h2>Push The Button To Prove You Are Human</h2>
+
+        <p id="validButtonPush"></p>
+
+        <div id="buttonPushArea">
+            <form id="buttonPushForm">
+                <input id="buttonPushActual" type="submit" value="Submit">
+            </form>
+        </div>
+
+    </section>
+
+    <section id="tasksCompleted">
+        <h2>Congratulations!</h2>
+
+        <p>You are now fully registered and are ready for The Greatest Website Ever!</p>
+        
+        <p id="countdown">Redirecting in: 10 </p>
+
+        <p id="spoilers">SPOILERS! The real page won't open until this project is complete. Stay tuned, my friends!</p>
+
     </section>
 </body>
 </html>
