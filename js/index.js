@@ -441,7 +441,7 @@ window.onload = function ()
         if(completedTasks == 3)
         {
             tasksCompletedSection.style.display = "block";
-            setTimeout(updateTimer, 1000)
+            setTimeout(updateTimer, 1000);
         }
         else
         {
@@ -481,7 +481,7 @@ window.onload = function ()
         }
         else
         {
-            spoilers.style.display = "block";
+            window.location.href = "https://www.spacejam.com/1996/";
         }
     }
 }
